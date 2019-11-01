@@ -88,7 +88,7 @@ for(r in 1:nrow(targets)){
     targets$Line[r]<-"blue4"}
   }
 
-# Creat image
+# Create image
 ggplot(targets,aes(x=x,y=1.2))+
   geom_bar(stat="identity",fill=targets$Colour,width=1,colour=targets$Line,alpha=1)+
   ylim(-0.5,1.5)+
