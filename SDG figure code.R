@@ -5,7 +5,7 @@ library(tidyverse)
 setwd() #####
 
 # Read file
-sdgs<-read.csv("SDGs goals & targets.csv") #read file with goals and targets
+sdgs<-read.csv("SDGs goals & targets.csv", allowEscapes = TRUE) #read file with goals and targets
 
 # Prep targets
 targets<-sdgs[,4:6] #extract targets
